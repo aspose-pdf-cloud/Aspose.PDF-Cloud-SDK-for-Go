@@ -975,6 +975,79 @@ func TestPutPdfInRequestToMobiXml(t *testing.T) {
 	}
 }
 
+// To Aps
+func TestGetPdfInStorageToMobiAps(t *testing.T) {
+
+	name := "5pages.pdf"
+
+	if err := GetBaseTest().UploadFile(name); err != nil {
+		t.Error(err)
+	}
+
+	args := map[string]interface{}{
+		"folder": GetBaseTest().remoteFolder,
+	}
+
+	response, httpResponse, err := GetBaseTest().PdfAPI.GetPdfInStorageToAps(name, args)
+	if err != nil {
+		t.Error(err)
+	} else if httpResponse.StatusCode < 200 || httpResponse.StatusCode > 299 {
+		t.Fail()
+	} else {
+		fmt.Printf("%d\tTestGetPdfInStorageToAps - %db\n", GetBaseTest().GetTestNumber(), len(response))
+	}
+}
+
+func TestPutPdfInStorageToAps(t *testing.T) {
+
+	name := "5pages.pdf"
+
+	if err := GetBaseTest().UploadFile(name); err != nil {
+		t.Error(err)
+	}
+
+	resFileName := "result.xml"
+	outPath := GetBaseTest().remoteFolder + "/" + resFileName
+
+	args := map[string]interface{}{
+		"folder": GetBaseTest().remoteFolder,
+	}
+
+	response, httpResponse, err := GetBaseTest().PdfAPI.PutPdfInStorageToAps(name, outPath, args)
+	if err != nil {
+		t.Error(err)
+	} else if httpResponse.StatusCode < 200 || httpResponse.StatusCode > 299 {
+		t.Fail()
+	} else {
+		fmt.Printf("%d\tTestPutPdfInStorageToAps - %d\n", GetBaseTest().GetTestNumber(), response.Code)
+	}
+}
+
+func TestPutPdfInRequestToAps(t *testing.T) {
+	name := "5pages.pdf"
+	resFileName := "result.xml"
+	outPath := GetBaseTest().remoteFolder + "/" + resFileName
+
+	file, err := os.Open(GetBaseTest().localTestDataFolder + "/" + name)
+	if err != nil {
+		t.Error(err)
+	}
+
+	args := map[string]interface{}{
+		"folder": GetBaseTest().remoteFolder,
+		"file":   file,
+	}
+
+	response, httpResponse, err := GetBaseTest().PdfAPI.PutPdfInRequestToAps(outPath, args)
+	if err != nil {
+		t.Error(err)
+	} else if httpResponse.StatusCode < 200 || httpResponse.StatusCode > 299 {
+		t.Fail()
+	} else {
+		fmt.Printf("%d\tTestPutPdfInRequestToAps - %d\n", GetBaseTest().GetTestNumber(), response.Code)
+	}
+}
+
 // PDF XFA To PDF ACRO FORM
 func TestGetXfaPdfInStorageToAcroForm(t *testing.T) {
 

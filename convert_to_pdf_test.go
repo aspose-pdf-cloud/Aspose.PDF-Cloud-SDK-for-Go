@@ -487,6 +487,52 @@ func TestPutXmlInStorageToPdf(t *testing.T) {
 	}
 }
 
+// from Aps
+func TestGetApsInStorageToPdf(t *testing.T) {
+
+	name := "5pages.aps"
+	srcPath := GetBaseTest().remoteFolder + "/" + name
+
+	if err := GetBaseTest().UploadFile(name); err != nil {
+		t.Error(err)
+	}
+
+	args := make(map[string]interface{})
+
+	response, httpResponse, err := GetBaseTest().PdfAPI.GetApsInStorageToPdf(srcPath, args)
+	if err != nil {
+		t.Error(err)
+	} else if httpResponse.StatusCode < 200 || httpResponse.StatusCode > 299 {
+		t.Fail()
+	} else {
+		fmt.Printf("%d\tTestGetApsInStorageToPdf - %db\n", GetBaseTest().GetTestNumber(), len(response))
+	}
+}
+
+func TestPutApsInStorageToPdf(t *testing.T) {
+
+	name := "5pages.aps"
+	resFileName := "fromXml.pdf"
+	srcPath := GetBaseTest().remoteFolder + "/" + name
+
+	if err := GetBaseTest().UploadFile(name); err != nil {
+		t.Error(err)
+	}
+
+	args := map[string]interface{}{
+		"folder": GetBaseTest().remoteFolder,
+	}
+
+	response, httpResponse, err := GetBaseTest().PdfAPI.PutApsInStorageToPdf(resFileName, srcPath, args)
+	if err != nil {
+		t.Error(err)
+	} else if httpResponse.StatusCode < 200 || httpResponse.StatusCode > 299 {
+		t.Fail()
+	} else {
+		fmt.Printf("%d\tTestPutApsInStorageToPdf - %d\n", GetBaseTest().GetTestNumber(), response.Code)
+	}
+}
+
 // from PS
 func TestGetPsInStorageToPdf(t *testing.T) {
 
