@@ -3,7 +3,6 @@
   ```bash
   go run uses_cases/annotations/*
   ```
-- *[annotations/annotations_helper.go](annotations/annotations_helper.go)* – Provides common utilities for initializing the API client and handling file upload/download for annotation examples.
 - *[annotations/delete_page_annotations.go](annotations/delete_page_annotations.go)* – Deletes all annotations from a specified page in a PDF document.
 - *[annotations/delete_text_annotation.go](annotations/delete_text_annotation.go)* – Deletes a specific annotation by its ID and its associated popup from a PDF document.
 - *[annotations/get_annotation_by_id.go](annotations/get_annotation_by_id.go)* – Retrieves and displays the details of a specific text annotation by its ID.
@@ -20,7 +19,6 @@
   go run uses_cases/attachments/*
   ```
 - *[attachments/append_attachment.go](attachments/append_attachment.go)* – Appends a new file attachment to an existing PDF document.
-- *[attachments/attachments_helper.go](attachments/attachments_helper.go)* – Contains helper functions for API initialization and file management for attachment operations.
 - *[attachments/get_attachment_by_index_show_save.go](attachments/get_attachment_by_index_show_save.go)* – Retrieves a specific attachment by its index, displays its info, and saves it locally.
 - *[attachments/get_attachments_show.go](attachments/get_attachments_show.go)* – Lists all attachments embedded within a PDF document.
 
@@ -30,7 +28,6 @@
   go run uses_cases/bookmarks/*
   ```
 - *[bookmarks/append_bookmark.go](bookmarks/append_bookmark.go)* – Adds a new bookmark with specific navigation properties to a PDF document.
-- *[bookmarks/bookmarks_helper.go](bookmarks/bookmarks_helper.go)* – Provides common setup and file handling utilities for bookmark examples.
 - *[bookmarks/get_bookmark_by_path_show.go](bookmarks/get_bookmark_by_path_show.go)* – Extracts and displays the details of a bookmark found at a specific path.
 - *[bookmarks/get_bookmarks_show.go](bookmarks/get_bookmarks_show.go)* – Extracts and lists all bookmarks from a PDF document.
 - *[bookmarks/remove_bookmark.go](bookmarks/remove_bookmark.go)* – Deletes a bookmark located at a specified path from a PDF document.
@@ -41,7 +38,6 @@
   ```bash
   go run uses_cases/change_layout/*
   ```
-- *[change_layout/change_layout_helper.go](change_layout/change_layout_helper.go)* – Includes helper functions for layout operations, including page info extraction and temporary document creation.
 - *[change_layout/crop_document_page.go](change_layout/crop_document_page.go)* – Crops a specified PDF page to defined dimensions by converting it to an image and creating a new PDF.
 - *[change_layout/resize_document_all_pages.go](change_layout/resize_document_all_pages.go)* – Resizes all pages of a PDF document by converting it to HTML and back with new dimensions.
 - *[change_layout/rotate_documents_pages.go](change_layout/rotate_documents_pages.go)* – Rotates a specified range of pages in a PDF document by a given angle.
@@ -52,7 +48,6 @@
   go run uses_cases/compares/*
   ```
 - *[compares/compare_pdf_documents.go](compares/compare_pdf_documents.go)* – Compares two PDF documents and produces a new PDF highlighting the differences.
-- *[compares/compares_helper.go](compares/compares_helper.go)* – Provides shared utilities for API setup and file transfer operations for comparison tasks.
 
 #### conversions
 - **[conversions/conversions_launch.go](conversions/conversions_launch.go)** – Orchestrates a comprehensive suite of PDF conversion tasks to and from various formats (images, HTML, Office docs, etc.).
@@ -83,7 +78,6 @@
 - *[conversions/convertPdfToXps.go](conversions/convertPdfToXps.go)* – Converts a PDF document to the XPS format.
 - *[conversions/convertPngToPdf.go](conversions/convertPngToPdf.go)* – Converts a PNG image file into a PDF document.
 - *[conversions/convertPsToPdf.go](conversions/convertPsToPdf.go)* – Converts a PostScript (PS) file into a PDF document.
-- *[conversions/conversions_helper.go](conversions/conversions_helper.go)* – Contains shared initialization and file handling logic for all conversion examples.
 
 #### create_documents
 - **[create_documents/createPdfWithConfig.go](create_documents/createPdfWithConfig.go)** – Demonstrates creating a PDF document with custom configuration (pages, properties, display settings) and a simple creation method.
@@ -99,7 +93,6 @@
   ```
 - *[encrypt_decrypt/change_document_passwords.go](encrypt_decrypt/change_document_passwords.go)* – Changes both the user and owner passwords of an encrypted PDF document.
 - *[encrypt_decrypt/decrypt_document.go](encrypt_decrypt/decrypt_document.go)* – Removes password protection from an encrypted PDF document.
-- *[encrypt_decrypt/encrypt_decrypt_helper.go](encrypt_decrypt/encrypt_decrypt_helper.go)* – Provides helper functions for security-related API examples.
 - *[encrypt_decrypt/encrypt_document.go](encrypt_decrypt/encrypt_document.go)* – Applies encryption with specified passwords and algorithm to a PDF document.
 
 #### headers_footers
@@ -111,7 +104,6 @@
 - *[headers_footers/append_image_header.go](headers_footers/append_image_header.go)* – Appends an image as a header to specified pages of a PDF document.
 - *[headers_footers/append_text_footer.go](headers_footers/append_text_footer.go)* – Appends a text string as a footer to specified pages of a PDF document.
 - *[headers_footers/append_text_header.go](headers_footers/append_text_header.go)* – Appends a text string as a header to specified pages of a PDF document.
-- *[headers_footers/headers_footers_helper.go](headers_footers/headers_footers_helper.go)* – Contains shared setup and utility functions for header and footer examples.
 
 #### links
 - **[links/links_launch.go](links/links_launch.go)** – Coordinates a workflow for managing hyperlinks in PDFs, including adding, retrieving, replacing, and deleting links.
@@ -121,7 +113,6 @@
 - *[links/append_link.go](links/append_link.go)* – Adds a new hyperlink annotation pointing to a URL on a specified PDF page.
 - *[links/extract_link.go](links/extract_link.go)* – Extracts and displays the properties of a specific link annotation by its ID.
 - *[links/extract_links.go](links/extract_links.go)* – Extracts and lists all link annotations from a specified page of a PDF document.
-- *[links/links_helper.go](links/links_helper.go)* – Provides common utilities for link management examples.
 - *[links/remove_link.go](links/remove_link.go)* – Deletes a specific hyperlink annotation from a PDF document.
 - *[links/replace_link.go](links/replace_link.go)* – Replaces the target URL and properties of an existing hyperlink annotation.
 
@@ -131,7 +122,6 @@
   go run uses_cases/merge/*
   ```
 - *[merge/mergeDocuments.go](merge/mergeDocuments.go)* – Merges a list of specified PDF documents into one combined PDF file.
-- *[merge/mergePdfDocuments_helper.go](merge/mergePdfDocuments_helper.go)* – Contains helper functions for file operations specific to the merge example.
 
 #### pages
 - **[pages/pages_launch.go](pages/pages_launch.go)** – Orchestrates various PDF page manipulation tasks including adding, moving, deleting, stamping, and extracting info.
@@ -145,7 +135,6 @@
 - *[pages/pages_delete.go](pages/pages_delete.go)* – Deletes a specified page from a PDF document.
 - *[pages/pages_extract_info.go](pages/pages_extract_info.go)* – Extracts and displays the dimensions and information of a specified PDF page.
 - *[pages/pages_get_words_count.go](pages/pages_get_words_count.go)* – Calculates and reports the number of words on each page of a PDF document.
-- *[pages/pages_helper.go](pages/pages_helper.go)* – Provides common setup and file handling functions for page manipulation examples.
 - *[pages/pages_move.go](pages/pages_move.go)* – Moves a page from one position to another within a PDF document.
 
 #### parser
@@ -158,7 +147,6 @@
 - *[parser/parse_get_images.go](parser/parse_get_images.go)* – Extracts all images from a specified page of a PDF document and saves them as PNG files.
 - *[parser/parse_get_tables.go](parser/parse_get_tables.go)* – Extracts all tables from a PDF document and saves their structured data as JSON.
 - *[parser/parse_get_textboxes.go](parser/parse_get_textboxes.go)* – Extracts all text box form fields from a PDF document and saves their data as JSON.
-- *[parser/parser_helper.go](parser/parser_helper.go)* – Contains shared utilities for file operations in parsing examples.
 
 #### stamps
 - **[stamps/stamps_launcher.go](stamps/stamps_launcher.go)** – Executes operations to add and remove text and image stamps from PDF documents and pages.
@@ -168,7 +156,6 @@
 - *[stamps/stamps_append_image.go](stamps/stamps_append_image.go)* – Applies an image stamp to all pages of a PDF document.
 - *[stamps/stamps_append_text.go](stamps/stamps_append_text.go)* – Applies a text stamp to all pages of a PDF document.
 - *[stamps/stamps_delete.go](stamps/stamps_delete.go)* – Deletes all stamps from an entire PDF document.
-- *[stamps/stamps_helper.go](stamps/stamps_helper.go)* – Provides helper functions for stamp-related API examples.
 - *[stamps/stamps_page_delete.go](stamps/stamps_page_delete.go)* – Deletes all stamps from a specific page of a PDF document.
 
 #### tables
@@ -183,8 +170,6 @@
 - *[tables/tables_extract_all.go](tables/tables_extract_all.go)* – Extracts and lists information about all tables found in a PDF document.
 - *[tables/tables_extract_by_id.go](tables/tables_extract_by_id.go)* – Extracts and displays the detailed structure of a specific table by its ID.
 - *[tables/tables_extract_on_page.go](tables/tables_extract_on_page.go)* – Extracts and lists information about all tables found on a specific page of a PDF.
-- *[tables/tables_helper.go](tables/tables_helper.go)* – Provides common utilities for table manipulation examples.
-- *[tables/tables_initialize.go](tables/tables_initialize.go)* – Contains a helper function that creates and returns a predefined table structure for use in examples.
 - *[tables/tables_replace.go](tables/tables_replace.go)* – Replaces an existing table in a PDF document with a newly defined table structure.
 
 #### watermarks
@@ -193,6 +178,5 @@
   go run uses_cases/watermarks/*
   ```
 - *[watermarks/watermarks_extract.go](watermarks/watermarks_extract.go)* – Scans a PDF document and lists information about all image-based watermarks found.
-- *[watermarks/watermarks_helper.go](watermarks/watermarks_helper.go)* – Contains shared setup and file handling logic for watermark examples.
 - *[watermarks/watermarks_images_add.go](watermarks/watermarks_images_add.go)* – Adds an image as a semi-transparent watermark to all pages of a PDF document.
 - *[watermarks/watermarks_images_delete.go](watermarks/watermarks_images_delete.go)* – Deletes a list of specific image watermarks by their IDs from a PDF document.
