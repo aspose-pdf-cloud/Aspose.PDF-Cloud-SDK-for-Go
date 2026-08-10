@@ -1,7 +1,7 @@
 # Aspose.PDF Cloud SDK for Go — Agent Analysis
 
 > **Repository:** [aspose-pdf-cloud/aspose-pdf-cloud-go](https://github.com/aspose-pdf-cloud/aspose-pdf-cloud-go)  
-> **Version:** 26.4 | **Go Module:** `github.com/aspose-pdf-cloud/aspose-pdf-cloud-go/v26`  
+> **Version:** 26.7 | **Go Module:** `github.com/aspose-pdf-cloud/aspose-pdf-cloud-go/v26`  
 > **License:** MIT | **Go Version:** 1.16+  
 > **API Version:** v3.0
 
@@ -345,7 +345,7 @@ The SDK is **auto-generated** from the OpenAPI specification. Evidence:
 | **MIT license header** | Every `.go` file starts with the same license block |
 | **Three-tuple returns** | `(Model, *http.Response, error)` for all API methods |
 | **Optional params as map** | `map[string]interface{}` for optional query parameters |
-| **Custom headers** | `x-aspose-client: go sdk`, `x-aspose-client-version: 26.4.0` |
+| **Custom headers** | `x-aspose-client: go sdk`, `x-aspose-client-version: 26.7.0` |
 | **Self-host support** | `SelfHost` flag skips OAuth2 authentication |
 | **Zero external deps** | Only Go standard library used |
 
