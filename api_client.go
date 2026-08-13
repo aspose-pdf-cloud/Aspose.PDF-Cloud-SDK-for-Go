@@ -42,8 +42,8 @@ import (
 )
 
 var (
-    jsonCheck = regexp.MustCompile("(?i:[application|text]/json)")
-    xmlCheck = regexp.MustCompile("(?i:[application|text]/xml)")
+    jsonCheck = regexp.MustCompile("(?i:(application|text)/json)")
+    xmlCheck = regexp.MustCompile("(?i:(application|text)/xml)")
 )
 
 // APIClient manages communication with the Aspose.PDF Cloud API Reference API v3.0
