@@ -9,12 +9,13 @@ import (
 )
 
 const (
-	REMOTE_FOLDER = "Your_Temp_Pdf_Cloud"
-	LOCAL_FOLDER  = "test_data"
-	PDF_DOCUMENT  = "output_created_config.pdf"
-	PAGE_WIDTH    = 590
-	PAGE_HEIGHT   = 894
-	PAGES_COUNT   = 5
+	REMOTE_FOLDER     = "Your_Temp_Pdf_Cloud"
+	LOCAL_FOLDER      = "test_data"
+	PDF_DOCUMENT      = "output_created_config.pdf"
+	PDF_SIMPLE_OUTPUT = "output_created_simple.pdf"
+	PAGE_WIDTH        = 590
+	PAGE_HEIGHT       = 894
+	PAGES_COUNT       = 5
 )
 
 func initPdfApi() *asposepdfcloud.PdfApiService {
@@ -30,7 +31,7 @@ func downloadFile(pdf_api *asposepdfcloud.PdfApiService, name string) {
 		"folder": REMOTE_FOLDER,
 	}
 	result_data, _, _ := pdf_api.DownloadFile(path.Join(REMOTE_FOLDER, name), args)
-	fileName := path.Join(LOCAL_FOLDER, PDF_DOCUMENT)
+	fileName := path.Join(LOCAL_FOLDER, name)
 	f, _ := os.Create(fileName)
 	_, _ = f.Write(result_data)
 }
@@ -68,12 +69,4 @@ func createPdf(pdf_api *asposepdfcloud.PdfApiService, pdf_name string, remote_fo
 	} else {
 		fmt.Println(result)
 	}
-}
-
-func main() {
-	pdfApi := initPdfApi()
-	createPdf(pdfApi, PDF_DOCUMENT, REMOTE_FOLDER)
-	downloadFile(pdfApi, PDF_DOCUMENT)
-
-	createPdfSimple()
 }

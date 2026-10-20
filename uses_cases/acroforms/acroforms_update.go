@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	asposepdfcloud "github.com/aspose-pdf-cloud/aspose-pdf-cloud-go/v25"
+	asposepdfcloud "github.com/aspose-pdf-cloud/aspose-pdf-cloud-go/v26"
 )
 
 func updateFormFiled(pdf_api *asposepdfcloud.PdfApiService, document_name string, output_name string, field_name string, remote_folder string) {
@@ -14,14 +14,14 @@ func updateFormFiled(pdf_api *asposepdfcloud.PdfApiService, document_name string
 	}
 
 	field := asposepdfcloud.Field{
-		Name: field_name,
+		Name:   field_name,
 		Type_:  asposepdfcloud.FieldTypeText,
 		Values: []string{"aspose-pdf-cloud@example.com"},
-		Rect: &asposepdfcloud.Rectangle{ LLX:125, LLY: 735, URX: 200, URY: 752},
+		Rect:   &asposepdfcloud.Rectangle{LLX: 125, LLY: 735, URX: 200, URY: 752},
 	}
 
-	fields := asposepdfcloud.Fields{};
-	fields.List = []asposepdfcloud.Field{ field }
+	fields := asposepdfcloud.Fields{}
+	fields.List = []asposepdfcloud.Field{field}
 
 	_, httpResponse, err := pdf_api.PutUpdateFields(document_name, fields, args)
 	if err != nil {

@@ -1,1 +1,2 @@
 *.mht -crlf -diff
+*.go text eol=lf

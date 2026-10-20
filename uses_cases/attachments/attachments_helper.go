@@ -23,7 +23,7 @@ const (
 
 func initPdfApi() *asposepdfcloud.PdfApiService {
 	// Initialize Credentials and create Pdf.Cloud service object
-	ClientId := "******" // Your Application Client ID
+	ClientId := "******"     // Your Application Client ID
 	ClientSecret := "******" // Your Application Client Secret
 
 	pdfApi := asposepdfcloud.NewPdfApiService(ClientId, ClientSecret, "")

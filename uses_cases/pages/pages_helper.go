@@ -23,14 +23,11 @@ const (
 	IMAGE_STAMP_LLY    = 800
 	IMAGE_STAMP_WIDTH  = 24
 	IMAGE_STAMP_HEIGHT = 24
-
-	API_CLIENT_ID     = "****************" // Your Application Client ID
-	API_CLIENT_SECRET = "****************" // Your Application Client Secret
 )
 
-func initPdfApi(clientId string, clientSecret string) *asposepdfcloud.PdfApiService {
-	ClientId := clientId
-	ClientSecret := clientSecret
+func initPdfApi() *asposepdfcloud.PdfApiService {
+	ClientId := "****************"     // Your Application Client ID
+	ClientSecret := "****************" // Your Application Client Secret
 
 	pdfApi := asposepdfcloud.NewPdfApiService(ClientId, ClientSecret, "")
 	return pdfApi

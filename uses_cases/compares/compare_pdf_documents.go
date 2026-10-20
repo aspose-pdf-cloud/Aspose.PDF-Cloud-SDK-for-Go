@@ -13,9 +13,6 @@ const (
 	PDF_DOCUMENT_1 = "sample.pdf"
 	PDF_DOCUMENT_2 = "sample_edited.pdf"
 	PDF_OUTPUT     = "output_compare.pdf"
-
-	PDF_API_CLIENT_ID     = "******"
-	PDF_API_CLIENT_SECRET = "******"
 )
 
 func СomparePdf(pdf_api *asposepdfcloud.PdfApiService, document1 string, document2 string, output_document string, remote_folder string) {
