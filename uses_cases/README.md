@@ -1,3 +1,14 @@
+#### acroforms
+- **[acroforms/acroforms_launch.go](acroforms/acroforms_launch.go)** – Orchestrates PDF AcroForm field operations including appending, retrieving, setting, updating, and deleting form fields.
+  ```bash
+  go run uses_cases/acroforms/*
+  ```
+- *[acroforms/acroforms_aad.go](acroforms/acroforms_aad.go)* – Appends a new form field to a PDF document.
+- *[acroforms/acroforms_get.go](acroforms/acroforms_get.go)* – Retrieves and lists all form fields (type, name, values) from a PDF document.
+- *[acroforms/acroforms_set.go](acroforms/acroforms_set.go)* – Sets the value of a specific form field in a PDF document.
+- *[acroforms/acroforms_update.go](acroforms/acroforms_update.go)* – Updates the properties of an existing form field in a PDF document.
+- *[acroforms/acroforms_remove.go](acroforms/acroforms_remove.go)* – Deletes a specific form field by name from a PDF document.
+
 #### annotations
 - **[annotations/annotations_launch.go](annotations/annotations_launch.go)** – Orchestrates various PDF annotation operations including adding highlights, strikeouts, free text, underlines, and managing annotations.
   ```bash
@@ -67,7 +78,7 @@
 - *[conversions/convertPdfToDocx.go](conversions/convertPdfToDocx.go)* – Converts a PDF document to the modern DOCX (Microsoft Word) format.
 - *[conversions/convertPdfToEpub.go](conversions/convertPdfToEpub.go)* – Converts a PDF document to the EPUB format.
 - *[conversions/convertPdfToExcel.go](conversions/convertPdfToExcel.go)* – Converts a PDF document to the XLSX (Microsoft Excel) format.
-- *[conversions/convertPdfToHtnl.go](conversions/convertPdfToHtnl.go)* – Converts a PDF document to a ZIP archive containing HTML files.
+- *[conversions/convertPdfToHtml.go](conversions/convertPdfToHtml.go)* – Converts a PDF document to a ZIP archive containing HTML files.
 - *[conversions/convertPdfToMobiXml.go](conversions/convertPdfToMobiXml.go)* – Converts a PDF document to the MOBI XML format.
 - *[conversions/convertPdfToPowerpoint.go](conversions/convertPdfToPowerpoint.go)* – Converts a PDF document to the PPTX (Microsoft PowerPoint) format.
 - *[conversions/convertPdfToSvg.go](conversions/convertPdfToSvg.go)* – Converts a PDF document to a ZIP archive containing SVG files.
@@ -80,7 +91,7 @@
 - *[conversions/convertPsToPdf.go](conversions/convertPsToPdf.go)* – Converts a PostScript (PS) file into a PDF document.
 
 #### create_documents
-- **[create_documents/createPdfWithConfig.go](create_documents/createPdfWithConfig.go)** – Demonstrates creating a PDF document with custom configuration (pages, properties, display settings) and a simple creation method.
+- **[create_documents/create_documents_launch.go](create_documents/create_documents_launch.go)** – Demonstrates creating a PDF document with custom configuration (pages, properties, display settings) and a simple creation method.
   ```bash
   go run uses_cases/create_documents/*
   ```
@@ -149,7 +160,7 @@
 - *[parser/parse_get_textboxes.go](parser/parse_get_textboxes.go)* – Extracts all text box form fields from a PDF document and saves their data as JSON.
 
 #### stamps
-- **[stamps/stamps_launcher.go](stamps/stamps_launcher.go)** – Executes operations to add and remove text and image stamps from PDF documents and pages.
+- **[stamps/stamps_launch.go](stamps/stamps_launch.go)** – Executes operations to add and remove text and image stamps from PDF documents and pages.
   ```bash
   go run uses_cases/stamps/*
   ```
