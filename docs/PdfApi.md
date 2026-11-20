@@ -5169,10 +5169,10 @@ Name | Type | Description  | Notes
  **format** | **string**| Allows to specify .doc or .docx file format. | 
  **imageResolutionX** | **int32**| Image resolution X. | 
  **imageResolutionY** | **int32**| Image resolution Y. | 
- **maxDistanceBetweenTextLines** | **float32**| Max distance between text lines. | 
+ **maxDistanceBetweenTextLines** | **float64**| Max distance between text lines. | 
  **mode** | **string**| Allows to control how a PDF document is converted into a word processing document. | 
  **recognizeBullets** | **bool**| Recognize bullets. | 
- **relativeHorizontalProximity** | **float32**| Relative horizontal proximity. | 
+ **relativeHorizontalProximity** | **float64**| Relative horizontal proximity. | 
  **folder** | **string**| The document folder. | 
  **storage** | **string**| The document storage. | 
  **password** | **string**| The password (Base64). | 
@@ -5491,7 +5491,7 @@ Optional parameters are passed through a map[string]interface{}.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **string**| The document name. | 
- **brightness** | **float32**| Image brightness. | 
+ **brightness** | **float64**| Image brightness. | 
  **compression** | **string**| Tiff compression. Possible values are: LZW, CCITT4, CCITT3, RLE, None. | 
  **colorDepth** | **string**| Image color depth. Possible valuse are: Default, Format8bpp, Format4bpp, Format1bpp. | 
  **leftMargin** | **int32**| Left image margin. | 
@@ -7367,8 +7367,8 @@ Rsize PDF document.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **string**| The document name. | 
-  **height** | **float32**| Page Height | 
-  **width** | **float32**| Page width | 
+  **height** | **float64**| Page Height | 
+  **width** | **float64**| Page width | 
   **pages** | **string**| Comma separated list of pages and page ranges. (Example: 1,3-5,8) | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
@@ -7378,8 +7378,8 @@ Optional parameters are passed through a map[string]interface{}.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **string**| The document name. | 
- **height** | **float32**| Page Height | 
- **width** | **float32**| Page width | 
+ **height** | **float64**| Page Height | 
+ **width** | **float64**| Page width | 
  **pages** | **string**| Comma separated list of pages and page ranges. (Example: 1,3-5,8) | 
  **storage** | **string**| The document storage. | 
  **folder** | **string**| The document folder. | 
@@ -7817,10 +7817,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **string**| The document name. | 
   **pageNumber** | **int32**| The page number. | 
-  **llx** | **float32**| Coordinate lower left X. | 
-  **lly** | **float32**| Coordinate lower left Y. | 
-  **urx** | **float32**| Coordinate upper right X. | 
-  **ury** | **float32**| Coordinate upper right Y. | 
+  **llx** | **float64**| Coordinate lower left X. | 
+  **lly** | **float64**| Coordinate lower left Y. | 
+  **urx** | **float64**| Coordinate upper right X. | 
+  **ury** | **float64**| Coordinate upper right Y. | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -7830,10 +7830,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **string**| The document name. | 
  **pageNumber** | **int32**| The page number. | 
- **llx** | **float32**| Coordinate lower left X. | 
- **lly** | **float32**| Coordinate lower left Y. | 
- **urx** | **float32**| Coordinate upper right X. | 
- **ury** | **float32**| Coordinate upper right Y. | 
+ **llx** | **float64**| Coordinate lower left X. | 
+ **lly** | **float64**| Coordinate lower left Y. | 
+ **urx** | **float64**| Coordinate upper right X. | 
+ **ury** | **float64**| Coordinate upper right Y. | 
  **imageFilePath** | **string**| Path to image file if specified. Request content is used otherwise. | 
  **storage** | **string**| The document storage. | 
  **folder** | **string**| The document folder. | 
@@ -9171,7 +9171,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PostSplitRangePdfDocument**
-> SplitResultResponse PostSplitRangePdfDocument(name, optional)
+> SplitResultResponse PostSplitRangePdfDocument(name, options, optional)
 Split document into ranges.
 
 ### Required Parameters
@@ -9179,6 +9179,7 @@ Split document into ranges.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **string**| The document name. | 
+  **options** | [**SplitRangePdfOptions**](SplitRangePdfOptions.md)| The splitting options. | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -11215,10 +11216,10 @@ Name | Type | Description  | Notes
  **format** | **string**| Allows to specify .doc or .docx file format. | 
  **imageResolutionX** | **int32**| Image resolution X. | 
  **imageResolutionY** | **int32**| Image resolution Y. | 
- **maxDistanceBetweenTextLines** | **float32**| Max distance between text lines. | 
+ **maxDistanceBetweenTextLines** | **float64**| Max distance between text lines. | 
  **mode** | **string**| Allows to control how a PDF document is converted into a word processing document. | 
  **recognizeBullets** | **bool**| Recognize bullets. | 
- **relativeHorizontalProximity** | **float32**| Relative horizontal proximity. | 
+ **relativeHorizontalProximity** | **float64**| Relative horizontal proximity. | 
  **storage** | **string**| The document storage. | 
  **password** | **string**| The password (Base64). | 
  **file** | ***os.File**| A file to be converted. | 
@@ -11506,7 +11507,7 @@ Optional parameters are passed through a map[string]interface{}.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **outPath** | **string**| Full resulting filename (ex. /folder1/folder2/result.tiff) | 
- **brightness** | **float32**| Image brightness. | 
+ **brightness** | **float64**| Image brightness. | 
  **compression** | **string**| Tiff compression. Possible values are: LZW, CCITT4, CCITT3, RLE, None. | 
  **colorDepth** | **string**| Image color depth. Possible valuse are: Default, Format8bpp, Format4bpp, Format1bpp. | 
  **leftMargin** | **int32**| Left image margin. | 
@@ -11725,10 +11726,10 @@ Name | Type | Description  | Notes
  **format** | **string**| Allows to specify .doc or .docx file format. | 
  **imageResolutionX** | **int32**| Image resolution X. | 
  **imageResolutionY** | **int32**| Image resolution Y. | 
- **maxDistanceBetweenTextLines** | **float32**| Max distance between text lines. | 
+ **maxDistanceBetweenTextLines** | **float64**| Max distance between text lines. | 
  **mode** | **string**| Allows to control how a PDF document is converted into a word processing document. | 
  **recognizeBullets** | **bool**| Recognize bullets. | 
- **relativeHorizontalProximity** | **float32**| Relative horizontal proximity. | 
+ **relativeHorizontalProximity** | **float64**| Relative horizontal proximity. | 
  **folder** | **string**| The document folder. | 
  **storage** | **string**| The document storage. | 
  **password** | **string**| The password (Base64). | 
@@ -12032,7 +12033,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **string**| The document name. | 
  **outPath** | **string**| Full resulting filename (ex. /folder1/folder2/result.tiff) | 
- **brightness** | **float32**| Image brightness. | 
+ **brightness** | **float64**| Image brightness. | 
  **compression** | **string**| Tiff compression. Possible values are: LZW, CCITT4, CCITT3, RLE, None. | 
  **colorDepth** | **string**| Image color depth. Possible valuse are: Default, Format8bpp, Format4bpp, Format1bpp. | 
  **leftMargin** | **int32**| Left image margin. | 

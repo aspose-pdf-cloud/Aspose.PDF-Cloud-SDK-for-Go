@@ -24,7 +24,7 @@ package asposepdfcloud
 // Represents a text style of a text
 type TextStyle struct {
 	// Gets or sets font size of the text.
-	FontSize float32 `json:"FontSize"`
+	FontSize float64 `json:"FontSize"`
 	// Gets or sets font of the text.
 	Font string `json:"Font,omitempty"`
 	// Gets or sets foreground color of the text.

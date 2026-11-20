@@ -24,7 +24,7 @@ package asposepdfcloud
 // Represents graphics info.
 type GraphInfo struct {
 	// Gets or sets a float value that indicates the line width of the graph.
-	LineWidth float32 `json:"LineWidth,omitempty"`
+	LineWidth float64 `json:"LineWidth,omitempty"`
 	// Gets or sets a Color object that indicates the color of the graph.
 	Color *Color `json:"Color,omitempty"`
 	// Gets or sets a dash array.

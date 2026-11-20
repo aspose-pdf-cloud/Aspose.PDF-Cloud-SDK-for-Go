@@ -42,7 +42,7 @@ type Paragraph struct {
 	// Rotation angle in degrees.
 	Rotation float64 `json:"Rotation,omitempty"`
 	// Subsequent lines indent value.
-	SubsequentLinesIndent float32 `json:"SubsequentLinesIndent,omitempty"`
+	SubsequentLinesIndent float64 `json:"SubsequentLinesIndent,omitempty"`
 	// Vertical alignment for the text inside paragraph's rectangle
 	VerticalAlignment VerticalAlignment `json:"VerticalAlignment,omitempty"`
 	// An array of text lines.

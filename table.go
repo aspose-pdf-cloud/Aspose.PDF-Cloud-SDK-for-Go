@@ -32,9 +32,9 @@ type Table struct {
 	// Gets VerticalAlignment of the annotation.
 	VerticalAlignment VerticalAlignment `json:"VerticalAlignment,omitempty"`
 	// Gets or sets the table top coordinate.
-	Top float32 `json:"Top,omitempty"`
+	Top float64 `json:"Top,omitempty"`
 	// Gets or sets the table left coordinate.
-	Left float32 `json:"Left,omitempty"`
+	Left float64 `json:"Left,omitempty"`
 	// Gets or sets the default cell text state.
 	DefaultCellTextState *TextState `json:"DefaultCellTextState,omitempty"`
 	// Gets or sets the default cell padding.
