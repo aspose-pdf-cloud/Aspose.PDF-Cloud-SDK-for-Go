@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **BottomMargin** | **float64** | Bottom margin. | [optional] [default to null]
 **Rectangle** | [***Rectangle**](Rectangle.md) | Rectangle of the paragraph. | [optional] [default to null]
 **Rotation** | **float64** | Rotation angle in degrees. | [optional] [default to null]
-**SubsequentLinesIndent** | **float64** | Subsequent lines indent value. | [optional] [default to null]
+**SubsequentLinesIndent** | **float32** | Subsequent lines indent value. | [optional] [default to null]
 **VerticalAlignment** | [***VerticalAlignment**](VerticalAlignment.md) | Vertical alignment for the text inside paragraph&#39;s rectangle | [optional] [default to null]
 **Lines** | [**[]TextLine**](TextLine.md) | An array of text lines. | [default to null]
 

@@ -2121,7 +2121,7 @@ func (a *PdfApiService) DownloadFile(path string, localVarOptionals map[string]i
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert APS file (located on storage) to PDF format and return resulting file in response. 
+/* PdfApiService Convert APS file (located on storage) to PDF format and return resulting file in response.
  @param srcPath Full source filename (ex. /folder1/folder2/template.xps)
  @param optional (nil or map[string]interface{}) with one or more of:
      @param "storage" (string) The document storage.
@@ -5793,7 +5793,7 @@ func (a *PdfApiService) GetDownloadDocumentAttachmentByIndex(name string, attach
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert EPUB file (located on storage) to PDF format and return resulting file in response. 
+/* PdfApiService Convert EPUB file (located on storage) to PDF format and return resulting file in response.
  @param srcPath Full source filename (ex. /folder1/folder2/template.epub)
  @param optional (nil or map[string]interface{}) with one or more of:
      @param "storage" (string) The document storage.
@@ -6706,7 +6706,7 @@ func (a *PdfApiService) GetHighlightAnnotation(name string, annotationId string,
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert HTML file (located on storage) to PDF format and return resulting file in response. 
+/* PdfApiService Convert HTML file (located on storage) to PDF format and return resulting file in response.
  @param srcPath Full source filename (ex. /folder1/folder2/template.zip)
  @param optional (nil or map[string]interface{}) with one or more of:
      @param "htmlFileName" (string) Name of HTML file in ZIP.
@@ -7606,7 +7606,7 @@ func (a *PdfApiService) GetImportFieldsFromXfdfInStorage(name string, xfdfFilePa
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Import from XML file (located on storage) to PDF format and return resulting file in response. 
+/* PdfApiService Import from XML file (located on storage) to PDF format and return resulting file in response.
  @param name The document name.
  @param xmlFilePath Full source filename (ex. /folder1/folder2/template.xml)
  @param optional (nil or map[string]interface{}) with one or more of:
@@ -8001,7 +8001,7 @@ func (a *PdfApiService) GetListBoxField(name string, fieldName string, localVarO
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert MD file (located on storage) to PDF format and return resulting file in response. 
+/* PdfApiService Convert MD file (located on storage) to PDF format and return resulting file in response.
  @param srcPath Full source filename (ex. /folder1/folder2/template.md)
  @param optional (nil or map[string]interface{}) with one or more of:
      @param "storage" (string) The document storage.
@@ -8071,7 +8071,7 @@ func (a *PdfApiService) GetMarkdownInStorageToPdf(srcPath string, localVarOption
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert MHT file (located on storage) to PDF format and return resulting file in response. 
+/* PdfApiService Convert MHT file (located on storage) to PDF format and return resulting file in response.
  @param srcPath Full source filename (ex. /folder1/folder2/template.mht)
  @param optional (nil or map[string]interface{}) with one or more of:
      @param "height" (float64) Page height
@@ -11583,7 +11583,7 @@ func (a *PdfApiService) GetPages(name string, localVarOptionals map[string]inter
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert PCL file (located on storage) to PDF format and return resulting file in response. 
+/* PdfApiService Convert PCL file (located on storage) to PDF format and return resulting file in response.
  @param srcPath Full source filename (ex. /folder1/folder2/template.pcl)
  @param optional (nil or map[string]interface{}) with one or more of:
      @param "storage" (string) The document storage.
@@ -11653,7 +11653,7 @@ func (a *PdfApiService) GetPclInStorageToPdf(srcPath string, localVarOptionals m
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert PDFA file (located on storage) to PDF format and return resulting file in response. 
+/* PdfApiService Convert PDFA file (located on storage) to PDF format and return resulting file in response.
  @param srcPath Full source filename (ex. /folder1/folder2/template.pdf)
  @param optional (nil or map[string]interface{}) with one or more of:
      @param "dontOptimize" (bool) If set, document resources will not be optimized.
@@ -11814,10 +11814,10 @@ func (a *PdfApiService) GetPdfInStorageToAps(name string, localVarOptionals map[
      @param "format" (string) Allows to specify .doc or .docx file format.
      @param "imageResolutionX" (int32) Image resolution X.
      @param "imageResolutionY" (int32) Image resolution Y.
-     @param "maxDistanceBetweenTextLines" (float64) Max distance between text lines.
+     @param "maxDistanceBetweenTextLines" (float32) Max distance between text lines.
      @param "mode" (string) Allows to control how a PDF document is converted into a word processing document.
      @param "recognizeBullets" (bool) Recognize bullets.
-     @param "relativeHorizontalProximity" (float64) Relative horizontal proximity.
+     @param "relativeHorizontalProximity" (float32) Relative horizontal proximity.
      @param "folder" (string) The document folder.
      @param "storage" (string) The document storage.
      @param "password" (string) The password (Base64).
@@ -11851,7 +11851,7 @@ func (a *PdfApiService) GetPdfInStorageToDoc(name string, localVarOptionals map[
 	if err := typeCheckParameter(localVarOptionals["imageResolutionY"], "int32", "imageResolutionY"); err != nil {
 		return successPayload, nil, err
 	}
-	if err := typeCheckParameter(localVarOptionals["maxDistanceBetweenTextLines"], "float64", "maxDistanceBetweenTextLines"); err != nil {
+	if err := typeCheckParameter(localVarOptionals["maxDistanceBetweenTextLines"], "float32", "maxDistanceBetweenTextLines"); err != nil {
 		return successPayload, nil, err
 	}
 	if err := typeCheckParameter(localVarOptionals["mode"], "string", "mode"); err != nil {
@@ -11860,7 +11860,7 @@ func (a *PdfApiService) GetPdfInStorageToDoc(name string, localVarOptionals map[
 	if err := typeCheckParameter(localVarOptionals["recognizeBullets"], "bool", "recognizeBullets"); err != nil {
 		return successPayload, nil, err
 	}
-	if err := typeCheckParameter(localVarOptionals["relativeHorizontalProximity"], "float64", "relativeHorizontalProximity"); err != nil {
+	if err := typeCheckParameter(localVarOptionals["relativeHorizontalProximity"], "float32", "relativeHorizontalProximity"); err != nil {
 		return successPayload, nil, err
 	}
 	if err := typeCheckParameter(localVarOptionals["folder"], "string", "folder"); err != nil {
@@ -11885,7 +11885,7 @@ func (a *PdfApiService) GetPdfInStorageToDoc(name string, localVarOptionals map[
 	if localVarTempParam, localVarOk := localVarOptionals["imageResolutionY"].(int32); localVarOk {
 		localVarQueryParams.Add("imageResolutionY", parameterToString(localVarTempParam, ""))
 	}
-	if localVarTempParam, localVarOk := localVarOptionals["maxDistanceBetweenTextLines"].(float64); localVarOk {
+	if localVarTempParam, localVarOk := localVarOptionals["maxDistanceBetweenTextLines"].(float32); localVarOk {
 		localVarQueryParams.Add("maxDistanceBetweenTextLines", parameterToString(localVarTempParam, ""))
 	}
 	if localVarTempParam, localVarOk := localVarOptionals["mode"].(string); localVarOk {
@@ -11894,7 +11894,7 @@ func (a *PdfApiService) GetPdfInStorageToDoc(name string, localVarOptionals map[
 	if localVarTempParam, localVarOk := localVarOptionals["recognizeBullets"].(bool); localVarOk {
 		localVarQueryParams.Add("recognizeBullets", parameterToString(localVarTempParam, ""))
 	}
-	if localVarTempParam, localVarOk := localVarOptionals["relativeHorizontalProximity"].(float64); localVarOk {
+	if localVarTempParam, localVarOk := localVarOptionals["relativeHorizontalProximity"].(float32); localVarOk {
 		localVarQueryParams.Add("relativeHorizontalProximity", parameterToString(localVarTempParam, ""))
 	}
 	if localVarTempParam, localVarOk := localVarOptionals["folder"].(string); localVarOk {
@@ -12819,7 +12819,7 @@ func (a *PdfApiService) GetPdfInStorageToText(name string, localVarOptionals map
 /* PdfApiService Converts PDF document (located on storage) to TIFF format and returns resulting file in response content
  @param name The document name.
  @param optional (nil or map[string]interface{}) with one or more of:
-     @param "brightness" (float64) Image brightness.
+     @param "brightness" (float32) Image brightness.
      @param "compression" (string) Tiff compression. Possible values are: LZW, CCITT4, CCITT3, RLE, None.
      @param "colorDepth" (string) Image color depth. Possible valuse are: Default, Format8bpp, Format4bpp, Format1bpp.
      @param "leftMargin" (int32) Left image margin.
@@ -12854,7 +12854,7 @@ func (a *PdfApiService) GetPdfInStorageToTiff(name string, localVarOptionals map
 	localVarQueryParams := _url.Values{}
 	localVarFormParams := _url.Values{}
 
-	if err := typeCheckParameter(localVarOptionals["brightness"], "float64", "brightness"); err != nil {
+	if err := typeCheckParameter(localVarOptionals["brightness"], "float32", "brightness"); err != nil {
 		return successPayload, nil, err
 	}
 	if err := typeCheckParameter(localVarOptionals["compression"], "string", "compression"); err != nil {
@@ -12906,7 +12906,7 @@ func (a *PdfApiService) GetPdfInStorageToTiff(name string, localVarOptionals map
 		return successPayload, nil, err
 	}
 
-	if localVarTempParam, localVarOk := localVarOptionals["brightness"].(float64); localVarOk {
+	if localVarTempParam, localVarOk := localVarOptionals["brightness"].(float32); localVarOk {
 		localVarQueryParams.Add("brightness", parameterToString(localVarTempParam, ""))
 	}
 	if localVarTempParam, localVarOk := localVarOptionals["compression"].(string); localVarOk {
@@ -13613,7 +13613,7 @@ func (a *PdfApiService) GetPopupAnnotation(name string, annotationId string, loc
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert PS file (located on storage) to PDF format and return resulting file in response. 
+/* PdfApiService Convert PS file (located on storage) to PDF format and return resulting file in response.
  @param srcPath Full source filename (ex. /folder1/folder2/template.ps)
  @param optional (nil or map[string]interface{}) with one or more of:
      @param "storage" (string) The document storage.
@@ -14631,7 +14631,7 @@ func (a *PdfApiService) GetStrikeOutAnnotation(name string, annotationId string,
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert SVG file (located on storage) to PDF format and return resulting file in response. 
+/* PdfApiService Convert SVG file (located on storage) to PDF format and return resulting file in response.
  @param srcPath Full source filename (ex. /folder1/folder2/template.svg)
  @param optional (nil or map[string]interface{}) with one or more of:
      @param "adjustPageSize" (bool) Adjust page size
@@ -14836,7 +14836,7 @@ func (a *PdfApiService) GetTable(name string, tableId string, localVarOptionals 
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert TeX file (located on storage) to PDF format and return resulting file in response. 
+/* PdfApiService Convert TeX file (located on storage) to PDF format and return resulting file in response.
  @param srcPath Full source filename (ex. /folder1/folder2/template.tex)
  @param optional (nil or map[string]interface{}) with one or more of:
      @param "storage" (string) The document storage.
@@ -15327,7 +15327,7 @@ func (a *PdfApiService) GetVerifySignature(name string, signName string, localVa
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert web page to PDF format and return resulting file in response. 
+/* PdfApiService Convert web page to PDF format and return resulting file in response.
  @param url Source url
  @param optional (nil or map[string]interface{}) with one or more of:
      @param "height" (float64) Page height
@@ -15600,7 +15600,7 @@ func (a *PdfApiService) GetXfaPdfInStorageToAcroForm(name string, localVarOption
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert XML file (located on storage) to PDF format and return resulting file in response. 
+/* PdfApiService Convert XML file (located on storage) to PDF format and return resulting file in response.
  @param srcPath Full source filename (ex. /folder1/folder2/template.xml)
  @param optional (nil or map[string]interface{}) with one or more of:
      @param "xslFilePath" (string) Full XSL source filename (ex. /folder1/folder2/template.xsl)
@@ -15845,7 +15845,7 @@ func (a *PdfApiService) GetXmpMetadataXml(name string, localVarOptionals map[str
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert XPS file (located on storage) to PDF format and return resulting file in response. 
+/* PdfApiService Convert XPS file (located on storage) to PDF format and return resulting file in response.
  @param srcPath Full source filename (ex. /folder1/folder2/template.xps)
  @param optional (nil or map[string]interface{}) with one or more of:
      @param "storage" (string) The document storage.
@@ -15915,7 +15915,7 @@ func (a *PdfApiService) GetXpsInStorageToPdf(srcPath string, localVarOptionals m
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert XslFo file (located on storage) to PDF format and return resulting file in response. 
+/* PdfApiService Convert XslFo file (located on storage) to PDF format and return resulting file in response.
  @param srcPath Full source filename (ex. /folder1/folder2/template.xslfo)
  @param optional (nil or map[string]interface{}) with one or more of:
      @param "storage" (string) The document storage.
@@ -17599,7 +17599,7 @@ func (a *PdfApiService) PostDocumentPagesCrop(name string, pages string, rect Re
      @param "folder" (string) The document folder.
      @param "password" (string) Base64 encoded password.
  @return AsposeResponse*/
-func (a *PdfApiService) PostDocumentPagesResize(name string, height float64, width float64, pages string, localVarOptionals map[string]interface{}) (AsposeResponse,  *http.Response, error) {
+func (a *PdfApiService) PostDocumentPagesResize(name string, height float32, width float32, pages string, localVarOptionals map[string]interface{}) (AsposeResponse,  *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
 		localVarPostBody interface{}
@@ -18403,7 +18403,7 @@ func (a *PdfApiService) PostFlattenDocument(name string, localVarOptionals map[s
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert HTML file (zip archive in request content) to PDF format and return resulting file in response. 
+/* PdfApiService Convert HTML file (zip archive in request content) to PDF format and return resulting file in response.
  @param optional (nil or map[string]interface{}) with one or more of:
      @param "htmlFileName" (string) Name of HTML file in ZIP.
      @param "height" (float64) Page height
@@ -18797,7 +18797,7 @@ func (a *PdfApiService) PostImportFieldsFromXml(name string, localVarOptionals m
      @param "folder" (string) The document folder.
      @param "image" (*os.File) Image file.
  @return AsposeResponse*/
-func (a *PdfApiService) PostInsertImage(name string, pageNumber int32, llx float64, lly float64, urx float64, ury float64, localVarOptionals map[string]interface{}) (AsposeResponse,  *http.Response, error) {
+func (a *PdfApiService) PostInsertImage(name string, pageNumber int32, llx float32, lly float32, urx float32, ury float32, localVarOptionals map[string]interface{}) (AsposeResponse,  *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
 		localVarPostBody interface{}
@@ -22066,13 +22066,13 @@ func (a *PdfApiService) PostSplitDocument(name string, localVarOptionals map[str
 
 /* PdfApiService Split document into ranges.
  @param name The document name.
- @param options The splitting options.
  @param optional (nil or map[string]interface{}) with one or more of:
+     @param "options" (SplitRangePdfOptions) The splitting options.
      @param "storage" (string) The document storage.
      @param "folder" (string) The document folder.
      @param "password" (string) Base64 encoded password.
  @return SplitResultResponse*/
-func (a *PdfApiService) PostSplitRangePdfDocument(name string, options SplitRangePdfOptions, localVarOptionals map[string]interface{}) (SplitResultResponse,  *http.Response, error) {
+func (a *PdfApiService) PostSplitRangePdfDocument(name string, localVarOptionals map[string]interface{}) (SplitResultResponse,  *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
 		localVarPostBody interface{}
@@ -22128,7 +22128,9 @@ func (a *PdfApiService) PostSplitRangePdfDocument(name string, options SplitRang
 		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
 	}
 	// body params
-	localVarPostBody = &options
+	if localVarTempParam, localVarOk := localVarOptionals["options"].(SplitRangePdfOptions); localVarOk {
+		localVarPostBody = &localVarTempParam
+	}
 	r, err := a.client.prepareRequest(localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
 	if err != nil {
 		return successPayload, nil, err
@@ -22574,7 +22576,7 @@ func (a *PdfApiService) PutAnnotationsFlatten(name string, localVarOptionals map
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert APS file (located on storage) to PDF format and upload resulting file to storage. 
+/* PdfApiService Convert APS file (located on storage) to PDF format and upload resulting file to storage.
  @param name The document name.
  @param srcPath Full source filename (ex. /folder1/folder2/template.xps)
  @param optional (nil or map[string]interface{}) with one or more of:
@@ -23587,7 +23589,7 @@ func (a *PdfApiService) PutEncryptDocument(outPath string, userPassword string, 
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert EPUB file (located on storage) to PDF format and upload resulting file to storage. 
+/* PdfApiService Convert EPUB file (located on storage) to PDF format and upload resulting file to storage.
  @param name The document name.
  @param srcPath Full source filename (ex. /folder1/folder2/template.epub)
  @param optional (nil or map[string]interface{}) with one or more of:
@@ -24312,7 +24314,7 @@ func (a *PdfApiService) PutHighlightAnnotation(name string, annotationId string,
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert HTML file (located on storage) to PDF format and upload resulting file to storage. 
+/* PdfApiService Convert HTML file (located on storage) to PDF format and upload resulting file to storage.
  @param name The document name.
  @param srcPath Full source filename (ex. /folder1/folder2/template.zip)
  @param optional (nil or map[string]interface{}) with one or more of:
@@ -24847,7 +24849,7 @@ func (a *PdfApiService) PutImageExtractAsTiff(name string, imageId string, local
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert image file (located on storage) to PDF format and upload resulting file to storage. 
+/* PdfApiService Convert image file (located on storage) to PDF format and upload resulting file to storage.
  @param name The document name.
  @param imageTemplates ImageTemplatesRequestImage templates
  @param optional (nil or map[string]interface{}) with one or more of:
@@ -25892,7 +25894,7 @@ func (a *PdfApiService) PutListBoxField(name string, fieldName string, field Lis
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert MD file (located on storage) to PDF format and upload resulting file to storage. 
+/* PdfApiService Convert MD file (located on storage) to PDF format and upload resulting file to storage.
  @param name The document name.
  @param srcPath Full source filename (ex. /folder1/folder2/template.md)
  @param optional (nil or map[string]interface{}) with one or more of:
@@ -26051,7 +26053,7 @@ func (a *PdfApiService) PutMergeDocuments(name string, mergeDocuments MergeDocum
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert MHT file (located on storage) to PDF format and upload resulting file to storage. 
+/* PdfApiService Convert MHT file (located on storage) to PDF format and upload resulting file to storage.
  @param name The document name.
  @param srcPath Full source filename (ex. /folder1/folder2/template.mht)
  @param optional (nil or map[string]interface{}) with one or more of:
@@ -26948,7 +26950,7 @@ func (a *PdfApiService) PutPageConvertToTiff(name string, pageNumber int32, outP
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert PCL file (located on storage) to PDF format and upload resulting file to storage. 
+/* PdfApiService Convert PCL file (located on storage) to PDF format and upload resulting file to storage.
  @param name The document name.
  @param srcPath Full source filename (ex. /folder1/folder2/template.pcl)
  @param optional (nil or map[string]interface{}) with one or more of:
@@ -27027,7 +27029,7 @@ func (a *PdfApiService) PutPclInStorageToPdf(name string, srcPath string, localV
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert PDFA file (located on storage) to PDF format and upload resulting file to storage. 
+/* PdfApiService Convert PDFA file (located on storage) to PDF format and upload resulting file to storage.
  @param name The document name.
  @param srcPath Full source filename (ex. /folder1/folder2/template.pdf)
  @param optional (nil or map[string]interface{}) with one or more of:
@@ -27201,10 +27203,10 @@ func (a *PdfApiService) PutPdfInRequestToAps(outPath string, localVarOptionals m
      @param "format" (string) Allows to specify .doc or .docx file format.
      @param "imageResolutionX" (int32) Image resolution X.
      @param "imageResolutionY" (int32) Image resolution Y.
-     @param "maxDistanceBetweenTextLines" (float64) Max distance between text lines.
+     @param "maxDistanceBetweenTextLines" (float32) Max distance between text lines.
      @param "mode" (string) Allows to control how a PDF document is converted into a word processing document.
      @param "recognizeBullets" (bool) Recognize bullets.
-     @param "relativeHorizontalProximity" (float64) Relative horizontal proximity.
+     @param "relativeHorizontalProximity" (float32) Relative horizontal proximity.
      @param "storage" (string) The document storage.
      @param "password" (string) The password (Base64).
      @param "file" (*os.File) A file to be converted.
@@ -27237,7 +27239,7 @@ func (a *PdfApiService) PutPdfInRequestToDoc(outPath string, localVarOptionals m
 	if err := typeCheckParameter(localVarOptionals["imageResolutionY"], "int32", "imageResolutionY"); err != nil {
 		return successPayload, nil, err
 	}
-	if err := typeCheckParameter(localVarOptionals["maxDistanceBetweenTextLines"], "float64", "maxDistanceBetweenTextLines"); err != nil {
+	if err := typeCheckParameter(localVarOptionals["maxDistanceBetweenTextLines"], "float32", "maxDistanceBetweenTextLines"); err != nil {
 		return successPayload, nil, err
 	}
 	if err := typeCheckParameter(localVarOptionals["mode"], "string", "mode"); err != nil {
@@ -27246,7 +27248,7 @@ func (a *PdfApiService) PutPdfInRequestToDoc(outPath string, localVarOptionals m
 	if err := typeCheckParameter(localVarOptionals["recognizeBullets"], "bool", "recognizeBullets"); err != nil {
 		return successPayload, nil, err
 	}
-	if err := typeCheckParameter(localVarOptionals["relativeHorizontalProximity"], "float64", "relativeHorizontalProximity"); err != nil {
+	if err := typeCheckParameter(localVarOptionals["relativeHorizontalProximity"], "float32", "relativeHorizontalProximity"); err != nil {
 		return successPayload, nil, err
 	}
 	if err := typeCheckParameter(localVarOptionals["storage"], "string", "storage"); err != nil {
@@ -27269,7 +27271,7 @@ func (a *PdfApiService) PutPdfInRequestToDoc(outPath string, localVarOptionals m
 	if localVarTempParam, localVarOk := localVarOptionals["imageResolutionY"].(int32); localVarOk {
 		localVarQueryParams.Add("imageResolutionY", parameterToString(localVarTempParam, ""))
 	}
-	if localVarTempParam, localVarOk := localVarOptionals["maxDistanceBetweenTextLines"].(float64); localVarOk {
+	if localVarTempParam, localVarOk := localVarOptionals["maxDistanceBetweenTextLines"].(float32); localVarOk {
 		localVarQueryParams.Add("maxDistanceBetweenTextLines", parameterToString(localVarTempParam, ""))
 	}
 	if localVarTempParam, localVarOk := localVarOptionals["mode"].(string); localVarOk {
@@ -27278,7 +27280,7 @@ func (a *PdfApiService) PutPdfInRequestToDoc(outPath string, localVarOptionals m
 	if localVarTempParam, localVarOk := localVarOptionals["recognizeBullets"].(bool); localVarOk {
 		localVarQueryParams.Add("recognizeBullets", parameterToString(localVarTempParam, ""))
 	}
-	if localVarTempParam, localVarOk := localVarOptionals["relativeHorizontalProximity"].(float64); localVarOk {
+	if localVarTempParam, localVarOk := localVarOptionals["relativeHorizontalProximity"].(float32); localVarOk {
 		localVarQueryParams.Add("relativeHorizontalProximity", parameterToString(localVarTempParam, ""))
 	}
 	if localVarTempParam, localVarOk := localVarOptionals["storage"].(string); localVarOk {
@@ -28161,7 +28163,7 @@ func (a *PdfApiService) PutPdfInRequestToTeX(outPath string, localVarOptionals m
 /* PdfApiService Converts PDF document (in request content) to TIFF format and uploads resulting file to storage.
  @param outPath Full resulting filename (ex. /folder1/folder2/result.tiff)
  @param optional (nil or map[string]interface{}) with one or more of:
-     @param "brightness" (float64) Image brightness.
+     @param "brightness" (float32) Image brightness.
      @param "compression" (string) Tiff compression. Possible values are: LZW, CCITT4, CCITT3, RLE, None.
      @param "colorDepth" (string) Image color depth. Possible valuse are: Default, Format8bpp, Format4bpp, Format1bpp.
      @param "leftMargin" (int32) Left image margin.
@@ -28195,7 +28197,7 @@ func (a *PdfApiService) PutPdfInRequestToTiff(outPath string, localVarOptionals 
 	localVarQueryParams := _url.Values{}
 	localVarFormParams := _url.Values{}
 
-	if err := typeCheckParameter(localVarOptionals["brightness"], "float64", "brightness"); err != nil {
+	if err := typeCheckParameter(localVarOptionals["brightness"], "float32", "brightness"); err != nil {
 		return successPayload, nil, err
 	}
 	if err := typeCheckParameter(localVarOptionals["compression"], "string", "compression"); err != nil {
@@ -28245,7 +28247,7 @@ func (a *PdfApiService) PutPdfInRequestToTiff(outPath string, localVarOptionals 
 	}
 
 	localVarQueryParams.Add("outPath", parameterToString(outPath, ""))
-	if localVarTempParam, localVarOk := localVarOptionals["brightness"].(float64); localVarOk {
+	if localVarTempParam, localVarOk := localVarOptionals["brightness"].(float32); localVarOk {
 		localVarQueryParams.Add("brightness", parameterToString(localVarTempParam, ""))
 	}
 	if localVarTempParam, localVarOk := localVarOptionals["compression"].(string); localVarOk {
@@ -28825,10 +28827,10 @@ func (a *PdfApiService) PutPdfInStorageToAps(name string, outPath string, localV
      @param "format" (string) Allows to specify .doc or .docx file format.
      @param "imageResolutionX" (int32) Image resolution X.
      @param "imageResolutionY" (int32) Image resolution Y.
-     @param "maxDistanceBetweenTextLines" (float64) Max distance between text lines.
+     @param "maxDistanceBetweenTextLines" (float32) Max distance between text lines.
      @param "mode" (string) Allows to control how a PDF document is converted into a word processing document.
      @param "recognizeBullets" (bool) Recognize bullets.
-     @param "relativeHorizontalProximity" (float64) Relative horizontal proximity.
+     @param "relativeHorizontalProximity" (float32) Relative horizontal proximity.
      @param "folder" (string) The document folder.
      @param "storage" (string) The document storage.
      @param "password" (string) The password (Base64).
@@ -28862,7 +28864,7 @@ func (a *PdfApiService) PutPdfInStorageToDoc(name string, outPath string, localV
 	if err := typeCheckParameter(localVarOptionals["imageResolutionY"], "int32", "imageResolutionY"); err != nil {
 		return successPayload, nil, err
 	}
-	if err := typeCheckParameter(localVarOptionals["maxDistanceBetweenTextLines"], "float64", "maxDistanceBetweenTextLines"); err != nil {
+	if err := typeCheckParameter(localVarOptionals["maxDistanceBetweenTextLines"], "float32", "maxDistanceBetweenTextLines"); err != nil {
 		return successPayload, nil, err
 	}
 	if err := typeCheckParameter(localVarOptionals["mode"], "string", "mode"); err != nil {
@@ -28871,7 +28873,7 @@ func (a *PdfApiService) PutPdfInStorageToDoc(name string, outPath string, localV
 	if err := typeCheckParameter(localVarOptionals["recognizeBullets"], "bool", "recognizeBullets"); err != nil {
 		return successPayload, nil, err
 	}
-	if err := typeCheckParameter(localVarOptionals["relativeHorizontalProximity"], "float64", "relativeHorizontalProximity"); err != nil {
+	if err := typeCheckParameter(localVarOptionals["relativeHorizontalProximity"], "float32", "relativeHorizontalProximity"); err != nil {
 		return successPayload, nil, err
 	}
 	if err := typeCheckParameter(localVarOptionals["folder"], "string", "folder"); err != nil {
@@ -28897,7 +28899,7 @@ func (a *PdfApiService) PutPdfInStorageToDoc(name string, outPath string, localV
 	if localVarTempParam, localVarOk := localVarOptionals["imageResolutionY"].(int32); localVarOk {
 		localVarQueryParams.Add("imageResolutionY", parameterToString(localVarTempParam, ""))
 	}
-	if localVarTempParam, localVarOk := localVarOptionals["maxDistanceBetweenTextLines"].(float64); localVarOk {
+	if localVarTempParam, localVarOk := localVarOptionals["maxDistanceBetweenTextLines"].(float32); localVarOk {
 		localVarQueryParams.Add("maxDistanceBetweenTextLines", parameterToString(localVarTempParam, ""))
 	}
 	if localVarTempParam, localVarOk := localVarOptionals["mode"].(string); localVarOk {
@@ -28906,7 +28908,7 @@ func (a *PdfApiService) PutPdfInStorageToDoc(name string, outPath string, localV
 	if localVarTempParam, localVarOk := localVarOptionals["recognizeBullets"].(bool); localVarOk {
 		localVarQueryParams.Add("recognizeBullets", parameterToString(localVarTempParam, ""))
 	}
-	if localVarTempParam, localVarOk := localVarOptionals["relativeHorizontalProximity"].(float64); localVarOk {
+	if localVarTempParam, localVarOk := localVarOptionals["relativeHorizontalProximity"].(float32); localVarOk {
 		localVarQueryParams.Add("relativeHorizontalProximity", parameterToString(localVarTempParam, ""))
 	}
 	if localVarTempParam, localVarOk := localVarOptionals["folder"].(string); localVarOk {
@@ -29769,7 +29771,7 @@ func (a *PdfApiService) PutPdfInStorageToTeX(name string, outPath string, localV
  @param name The document name.
  @param outPath Full resulting filename (ex. /folder1/folder2/result.tiff)
  @param optional (nil or map[string]interface{}) with one or more of:
-     @param "brightness" (float64) Image brightness.
+     @param "brightness" (float32) Image brightness.
      @param "compression" (string) Tiff compression. Possible values are: LZW, CCITT4, CCITT3, RLE, None.
      @param "colorDepth" (string) Image color depth. Possible valuse are: Default, Format8bpp, Format4bpp, Format1bpp.
      @param "leftMargin" (int32) Left image margin.
@@ -29804,7 +29806,7 @@ func (a *PdfApiService) PutPdfInStorageToTiff(name string, outPath string, local
 	localVarQueryParams := _url.Values{}
 	localVarFormParams := _url.Values{}
 
-	if err := typeCheckParameter(localVarOptionals["brightness"], "float64", "brightness"); err != nil {
+	if err := typeCheckParameter(localVarOptionals["brightness"], "float32", "brightness"); err != nil {
 		return successPayload, nil, err
 	}
 	if err := typeCheckParameter(localVarOptionals["compression"], "string", "compression"); err != nil {
@@ -29857,7 +29859,7 @@ func (a *PdfApiService) PutPdfInStorageToTiff(name string, outPath string, local
 	}
 
 	localVarQueryParams.Add("outPath", parameterToString(outPath, ""))
-	if localVarTempParam, localVarOk := localVarOptionals["brightness"].(float64); localVarOk {
+	if localVarTempParam, localVarOk := localVarOptionals["brightness"].(float32); localVarOk {
 		localVarQueryParams.Add("brightness", parameterToString(localVarTempParam, ""))
 	}
 	if localVarTempParam, localVarOk := localVarOptionals["compression"].(string); localVarOk {
@@ -30661,7 +30663,7 @@ func (a *PdfApiService) PutPrivileges(name string, privileges DocumentPrivilege,
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert PS file (located on storage) to PDF format and upload resulting file to storage. 
+/* PdfApiService Convert PS file (located on storage) to PDF format and upload resulting file to storage.
  @param name The document name.
  @param srcPath Full source filename (ex. /folder1/folder2/template.ps)
  @param optional (nil or map[string]interface{}) with one or more of:
@@ -32096,7 +32098,7 @@ func (a *PdfApiService) PutStrikeOutAnnotation(name string, annotationId string,
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert SVG file (located on storage) to PDF format and upload resulting file to storage. 
+/* PdfApiService Convert SVG file (located on storage) to PDF format and upload resulting file to storage.
  @param name The document name.
  @param srcPath Full source filename (ex. /folder1/folder2/template.svg)
  @param optional (nil or map[string]interface{}) with one or more of:
@@ -32313,7 +32315,7 @@ func (a *PdfApiService) PutTable(name string, tableId string, table Table, local
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert TeX file (located on storage) to PDF format and upload resulting file to storage. 
+/* PdfApiService Convert TeX file (located on storage) to PDF format and upload resulting file to storage.
  @param name The document name.
  @param srcPath Full source filename (ex. /folder1/folder2/template.tex)
  @param optional (nil or map[string]interface{}) with one or more of:
@@ -32800,7 +32802,7 @@ func (a *PdfApiService) PutUpdateFields(name string, fields Fields, localVarOpti
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert web page to PDF format and upload resulting file to storage. 
+/* PdfApiService Convert web page to PDF format and upload resulting file to storage.
  @param name The document name.
  @param url Source url
  @param optional (nil or map[string]interface{}) with one or more of:
@@ -33088,7 +33090,7 @@ func (a *PdfApiService) PutXfaPdfInStorageToAcroForm(name string, outPath string
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert XML file (located on storage) to PDF format and upload resulting file to storage. 
+/* PdfApiService Convert XML file (located on storage) to PDF format and upload resulting file to storage.
  @param name The document name.
  @param srcPath Full source filename (ex. /folder1/folder2/template.xml)
  @param optional (nil or map[string]interface{}) with one or more of:
@@ -33174,7 +33176,7 @@ func (a *PdfApiService) PutXmlInStorageToPdf(name string, srcPath string, localV
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert XPS file (located on storage) to PDF format and upload resulting file to storage. 
+/* PdfApiService Convert XPS file (located on storage) to PDF format and upload resulting file to storage.
  @param name The document name.
  @param srcPath Full source filename (ex. /folder1/folder2/template.xps)
  @param optional (nil or map[string]interface{}) with one or more of:
@@ -33253,7 +33255,7 @@ func (a *PdfApiService) PutXpsInStorageToPdf(name string, srcPath string, localV
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert XslFo file (located on storage) to PDF format and upload resulting file to storage. 
+/* PdfApiService Convert XslFo file (located on storage) to PDF format and upload resulting file to storage.
  @param name The document name.
  @param srcPath Full source filename (ex. /folder1/folder2/template.xpsfo)
  @param optional (nil or map[string]interface{}) with one or more of:

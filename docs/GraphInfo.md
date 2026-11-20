@@ -4,7 +4,7 @@ Represents graphics info.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**LineWidth** | **float64** | Gets or sets a float value that indicates the line width of the graph. | [optional] [default to null]
+**LineWidth** | **float32** | Gets or sets a float value that indicates the line width of the graph. | [optional] [default to null]
 **Color** | [***Color**](Color.md) | Gets or sets a Color object that indicates the color of the graph. | [optional] [default to null]
 **DashArray** | **[]int32** | Gets or sets a dash array. | [optional] [default to null]
 **DashPhase** | **int32** | Gets or sets a dash phase. | [optional] [default to null]
