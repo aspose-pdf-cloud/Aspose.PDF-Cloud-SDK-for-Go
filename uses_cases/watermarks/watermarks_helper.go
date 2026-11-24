@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"os"
 	"path"
@@ -26,9 +27,6 @@ const (
 	IMAGE_Y       = 400
 	IMAGE_WIDTH   = 64
 	IMAGE_HEIGHT  = 64
-
-	CLIENT_ID     = "************" // Your Application Client ID
-	CLIENT_SECRET = "************" // Your Application Client Secret
 )
 
 var (
@@ -45,7 +43,16 @@ var (
 )
 
 func initPdfApi() *asposepdfcloud.PdfApiService {
-	pdfApi := asposepdfcloud.NewPdfApiService(CLIENT_ID, CLIENT_SECRET, "")
+	// Initialize Credentials and create Pdf.Cloud service object
+	content, err := os.ReadFile("settings/credentials.json")
+	if err != nil {
+		panic(err)
+	}
+	var m map[string]interface{}
+	if err := json.Unmarshal(content, &m); err != nil {
+		panic(err)
+	}
+	pdfApi := asposepdfcloud.NewPdfApiService(m["client_id"].(string), m["client_secret"].(string), "")
 	return pdfApi
 }
 

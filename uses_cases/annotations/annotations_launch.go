@@ -1,7 +1,7 @@
 package main
 
 func main() {
-	pdfApi := InitPdfApi()
+	pdfApi := initPdfApi()
 
 	AppendHighlightAnnotation(pdfApi, PDF_DOCUMENT_NAME, PAGE_NUMBER, PDF_OUTPUT, "add_highlight_annotation_", REMOTE_FOLDER)
 
