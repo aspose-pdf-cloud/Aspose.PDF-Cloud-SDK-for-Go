@@ -2121,7 +2121,7 @@ func (a *PdfApiService) DownloadFile(path string, localVarOptionals map[string]i
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert APS file (located on storage) to PDF format and return resulting file in response. 
+/* PdfApiService Convert APS file (located on storage) to PDF format and return resulting file in response.
  @param srcPath Full source filename (ex. /folder1/folder2/template.xps)
  @param optional (nil or map[string]interface{}) with one or more of:
      @param "storage" (string) The document storage.
@@ -5793,7 +5793,7 @@ func (a *PdfApiService) GetDownloadDocumentAttachmentByIndex(name string, attach
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert EPUB file (located on storage) to PDF format and return resulting file in response. 
+/* PdfApiService Convert EPUB file (located on storage) to PDF format and return resulting file in response.
  @param srcPath Full source filename (ex. /folder1/folder2/template.epub)
  @param optional (nil or map[string]interface{}) with one or more of:
      @param "storage" (string) The document storage.
@@ -6706,7 +6706,7 @@ func (a *PdfApiService) GetHighlightAnnotation(name string, annotationId string,
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert HTML file (located on storage) to PDF format and return resulting file in response. 
+/* PdfApiService Convert HTML file (located on storage) to PDF format and return resulting file in response.
  @param srcPath Full source filename (ex. /folder1/folder2/template.zip)
  @param optional (nil or map[string]interface{}) with one or more of:
      @param "htmlFileName" (string) Name of HTML file in ZIP.
@@ -7606,7 +7606,7 @@ func (a *PdfApiService) GetImportFieldsFromXfdfInStorage(name string, xfdfFilePa
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Import from XML file (located on storage) to PDF format and return resulting file in response. 
+/* PdfApiService Import from XML file (located on storage) to PDF format and return resulting file in response.
  @param name The document name.
  @param xmlFilePath Full source filename (ex. /folder1/folder2/template.xml)
  @param optional (nil or map[string]interface{}) with one or more of:
@@ -8001,7 +8001,7 @@ func (a *PdfApiService) GetListBoxField(name string, fieldName string, localVarO
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert MD file (located on storage) to PDF format and return resulting file in response. 
+/* PdfApiService Convert MD file (located on storage) to PDF format and return resulting file in response.
  @param srcPath Full source filename (ex. /folder1/folder2/template.md)
  @param optional (nil or map[string]interface{}) with one or more of:
      @param "storage" (string) The document storage.
@@ -8071,7 +8071,7 @@ func (a *PdfApiService) GetMarkdownInStorageToPdf(srcPath string, localVarOption
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert MHT file (located on storage) to PDF format and return resulting file in response. 
+/* PdfApiService Convert MHT file (located on storage) to PDF format and return resulting file in response.
  @param srcPath Full source filename (ex. /folder1/folder2/template.mht)
  @param optional (nil or map[string]interface{}) with one or more of:
      @param "height" (float64) Page height
@@ -11583,7 +11583,7 @@ func (a *PdfApiService) GetPages(name string, localVarOptionals map[string]inter
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert PCL file (located on storage) to PDF format and return resulting file in response. 
+/* PdfApiService Convert PCL file (located on storage) to PDF format and return resulting file in response.
  @param srcPath Full source filename (ex. /folder1/folder2/template.pcl)
  @param optional (nil or map[string]interface{}) with one or more of:
      @param "storage" (string) The document storage.
@@ -11653,7 +11653,7 @@ func (a *PdfApiService) GetPclInStorageToPdf(srcPath string, localVarOptionals m
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert PDFA file (located on storage) to PDF format and return resulting file in response. 
+/* PdfApiService Convert PDFA file (located on storage) to PDF format and return resulting file in response.
  @param srcPath Full source filename (ex. /folder1/folder2/template.pdf)
  @param optional (nil or map[string]interface{}) with one or more of:
      @param "dontOptimize" (bool) If set, document resources will not be optimized.
@@ -13613,7 +13613,7 @@ func (a *PdfApiService) GetPopupAnnotation(name string, annotationId string, loc
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert PS file (located on storage) to PDF format and return resulting file in response. 
+/* PdfApiService Convert PS file (located on storage) to PDF format and return resulting file in response.
  @param srcPath Full source filename (ex. /folder1/folder2/template.ps)
  @param optional (nil or map[string]interface{}) with one or more of:
      @param "storage" (string) The document storage.
@@ -14631,7 +14631,7 @@ func (a *PdfApiService) GetStrikeOutAnnotation(name string, annotationId string,
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert SVG file (located on storage) to PDF format and return resulting file in response. 
+/* PdfApiService Convert SVG file (located on storage) to PDF format and return resulting file in response.
  @param srcPath Full source filename (ex. /folder1/folder2/template.svg)
  @param optional (nil or map[string]interface{}) with one or more of:
      @param "adjustPageSize" (bool) Adjust page size
@@ -14836,7 +14836,7 @@ func (a *PdfApiService) GetTable(name string, tableId string, localVarOptionals 
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert TeX file (located on storage) to PDF format and return resulting file in response. 
+/* PdfApiService Convert TeX file (located on storage) to PDF format and return resulting file in response.
  @param srcPath Full source filename (ex. /folder1/folder2/template.tex)
  @param optional (nil or map[string]interface{}) with one or more of:
      @param "storage" (string) The document storage.
@@ -15327,7 +15327,7 @@ func (a *PdfApiService) GetVerifySignature(name string, signName string, localVa
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert web page to PDF format and return resulting file in response. 
+/* PdfApiService Convert web page to PDF format and return resulting file in response.
  @param url Source url
  @param optional (nil or map[string]interface{}) with one or more of:
      @param "height" (float64) Page height
@@ -15600,7 +15600,7 @@ func (a *PdfApiService) GetXfaPdfInStorageToAcroForm(name string, localVarOption
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert XML file (located on storage) to PDF format and return resulting file in response. 
+/* PdfApiService Convert XML file (located on storage) to PDF format and return resulting file in response.
  @param srcPath Full source filename (ex. /folder1/folder2/template.xml)
  @param optional (nil or map[string]interface{}) with one or more of:
      @param "xslFilePath" (string) Full XSL source filename (ex. /folder1/folder2/template.xsl)
@@ -15845,7 +15845,7 @@ func (a *PdfApiService) GetXmpMetadataXml(name string, localVarOptionals map[str
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert XPS file (located on storage) to PDF format and return resulting file in response. 
+/* PdfApiService Convert XPS file (located on storage) to PDF format and return resulting file in response.
  @param srcPath Full source filename (ex. /folder1/folder2/template.xps)
  @param optional (nil or map[string]interface{}) with one or more of:
      @param "storage" (string) The document storage.
@@ -15915,7 +15915,7 @@ func (a *PdfApiService) GetXpsInStorageToPdf(srcPath string, localVarOptionals m
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert XslFo file (located on storage) to PDF format and return resulting file in response. 
+/* PdfApiService Convert XslFo file (located on storage) to PDF format and return resulting file in response.
  @param srcPath Full source filename (ex. /folder1/folder2/template.xslfo)
  @param optional (nil or map[string]interface{}) with one or more of:
      @param "storage" (string) The document storage.
@@ -18403,7 +18403,7 @@ func (a *PdfApiService) PostFlattenDocument(name string, localVarOptionals map[s
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert HTML file (zip archive in request content) to PDF format and return resulting file in response. 
+/* PdfApiService Convert HTML file (zip archive in request content) to PDF format and return resulting file in response.
  @param optional (nil or map[string]interface{}) with one or more of:
      @param "htmlFileName" (string) Name of HTML file in ZIP.
      @param "height" (float64) Page height
@@ -22574,7 +22574,7 @@ func (a *PdfApiService) PutAnnotationsFlatten(name string, localVarOptionals map
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert APS file (located on storage) to PDF format and upload resulting file to storage. 
+/* PdfApiService Convert APS file (located on storage) to PDF format and upload resulting file to storage.
  @param name The document name.
  @param srcPath Full source filename (ex. /folder1/folder2/template.xps)
  @param optional (nil or map[string]interface{}) with one or more of:
@@ -23587,7 +23587,7 @@ func (a *PdfApiService) PutEncryptDocument(outPath string, userPassword string, 
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert EPUB file (located on storage) to PDF format and upload resulting file to storage. 
+/* PdfApiService Convert EPUB file (located on storage) to PDF format and upload resulting file to storage.
  @param name The document name.
  @param srcPath Full source filename (ex. /folder1/folder2/template.epub)
  @param optional (nil or map[string]interface{}) with one or more of:
@@ -24312,7 +24312,7 @@ func (a *PdfApiService) PutHighlightAnnotation(name string, annotationId string,
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert HTML file (located on storage) to PDF format and upload resulting file to storage. 
+/* PdfApiService Convert HTML file (located on storage) to PDF format and upload resulting file to storage.
  @param name The document name.
  @param srcPath Full source filename (ex. /folder1/folder2/template.zip)
  @param optional (nil or map[string]interface{}) with one or more of:
@@ -24847,7 +24847,7 @@ func (a *PdfApiService) PutImageExtractAsTiff(name string, imageId string, local
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert image file (located on storage) to PDF format and upload resulting file to storage. 
+/* PdfApiService Convert image file (located on storage) to PDF format and upload resulting file to storage.
  @param name The document name.
  @param imageTemplates ImageTemplatesRequestImage templates
  @param optional (nil or map[string]interface{}) with one or more of:
@@ -25892,7 +25892,7 @@ func (a *PdfApiService) PutListBoxField(name string, fieldName string, field Lis
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert MD file (located on storage) to PDF format and upload resulting file to storage. 
+/* PdfApiService Convert MD file (located on storage) to PDF format and upload resulting file to storage.
  @param name The document name.
  @param srcPath Full source filename (ex. /folder1/folder2/template.md)
  @param optional (nil or map[string]interface{}) with one or more of:
@@ -26051,7 +26051,7 @@ func (a *PdfApiService) PutMergeDocuments(name string, mergeDocuments MergeDocum
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert MHT file (located on storage) to PDF format and upload resulting file to storage. 
+/* PdfApiService Convert MHT file (located on storage) to PDF format and upload resulting file to storage.
  @param name The document name.
  @param srcPath Full source filename (ex. /folder1/folder2/template.mht)
  @param optional (nil or map[string]interface{}) with one or more of:
@@ -26948,7 +26948,7 @@ func (a *PdfApiService) PutPageConvertToTiff(name string, pageNumber int32, outP
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert PCL file (located on storage) to PDF format and upload resulting file to storage. 
+/* PdfApiService Convert PCL file (located on storage) to PDF format and upload resulting file to storage.
  @param name The document name.
  @param srcPath Full source filename (ex. /folder1/folder2/template.pcl)
  @param optional (nil or map[string]interface{}) with one or more of:
@@ -27027,7 +27027,7 @@ func (a *PdfApiService) PutPclInStorageToPdf(name string, srcPath string, localV
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert PDFA file (located on storage) to PDF format and upload resulting file to storage. 
+/* PdfApiService Convert PDFA file (located on storage) to PDF format and upload resulting file to storage.
  @param name The document name.
  @param srcPath Full source filename (ex. /folder1/folder2/template.pdf)
  @param optional (nil or map[string]interface{}) with one or more of:
@@ -30661,7 +30661,7 @@ func (a *PdfApiService) PutPrivileges(name string, privileges DocumentPrivilege,
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert PS file (located on storage) to PDF format and upload resulting file to storage. 
+/* PdfApiService Convert PS file (located on storage) to PDF format and upload resulting file to storage.
  @param name The document name.
  @param srcPath Full source filename (ex. /folder1/folder2/template.ps)
  @param optional (nil or map[string]interface{}) with one or more of:
@@ -32096,7 +32096,7 @@ func (a *PdfApiService) PutStrikeOutAnnotation(name string, annotationId string,
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert SVG file (located on storage) to PDF format and upload resulting file to storage. 
+/* PdfApiService Convert SVG file (located on storage) to PDF format and upload resulting file to storage.
  @param name The document name.
  @param srcPath Full source filename (ex. /folder1/folder2/template.svg)
  @param optional (nil or map[string]interface{}) with one or more of:
@@ -32313,7 +32313,7 @@ func (a *PdfApiService) PutTable(name string, tableId string, table Table, local
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert TeX file (located on storage) to PDF format and upload resulting file to storage. 
+/* PdfApiService Convert TeX file (located on storage) to PDF format and upload resulting file to storage.
  @param name The document name.
  @param srcPath Full source filename (ex. /folder1/folder2/template.tex)
  @param optional (nil or map[string]interface{}) with one or more of:
@@ -32800,7 +32800,7 @@ func (a *PdfApiService) PutUpdateFields(name string, fields Fields, localVarOpti
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert web page to PDF format and upload resulting file to storage. 
+/* PdfApiService Convert web page to PDF format and upload resulting file to storage.
  @param name The document name.
  @param url Source url
  @param optional (nil or map[string]interface{}) with one or more of:
@@ -33088,7 +33088,7 @@ func (a *PdfApiService) PutXfaPdfInStorageToAcroForm(name string, outPath string
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert XML file (located on storage) to PDF format and upload resulting file to storage. 
+/* PdfApiService Convert XML file (located on storage) to PDF format and upload resulting file to storage.
  @param name The document name.
  @param srcPath Full source filename (ex. /folder1/folder2/template.xml)
  @param optional (nil or map[string]interface{}) with one or more of:
@@ -33174,7 +33174,7 @@ func (a *PdfApiService) PutXmlInStorageToPdf(name string, srcPath string, localV
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert XPS file (located on storage) to PDF format and upload resulting file to storage. 
+/* PdfApiService Convert XPS file (located on storage) to PDF format and upload resulting file to storage.
  @param name The document name.
  @param srcPath Full source filename (ex. /folder1/folder2/template.xps)
  @param optional (nil or map[string]interface{}) with one or more of:
@@ -33253,7 +33253,7 @@ func (a *PdfApiService) PutXpsInStorageToPdf(name string, srcPath string, localV
 	return successPayload, localVarHttpResponse, err
 }
 
-/* PdfApiService Convert XslFo file (located on storage) to PDF format and upload resulting file to storage. 
+/* PdfApiService Convert XslFo file (located on storage) to PDF format and upload resulting file to storage.
  @param name The document name.
  @param srcPath Full source filename (ex. /folder1/folder2/template.xpsfo)
  @param optional (nil or map[string]interface{}) with one or more of:
