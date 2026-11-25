@@ -1,7 +1,7 @@
 package main
 
 func main() {
-	pdfApi := initPdfApi()
+	pdfApi := initPdfApi(API_CLIENT_ID, API_CLIENT_SECRET)
 
 	AppendNewPage(pdfApi, PDF_DOCUMENT, PDF_OUTPUT, REMOTE_FOLDER)
 
